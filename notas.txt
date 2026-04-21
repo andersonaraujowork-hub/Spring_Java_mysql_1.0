@@ -1,0 +1,24 @@
+Algumas dicas para o seu fluxo agora:
+Ver os logs: Você pode deixar essa janela aberta para ver os logs em tempo real (como as queries SQL que o Hibernate vai disparar).
+
+Alterou o código? Se você mudar algo no Java, lembre-se:
+
+Pare com Ctrl + C.
+
+Rode ./mvnw clean package -DskipTests para gerar o novo JAR.
+
+Rode docker compose up --build.
+
+Banco de Dados: Como você usou o volume ./conf.d, se você quiser ver os dados por fora (via MySQL Workbench ou DBeaver), use o localhost:3306 com o usuário springuser e senha ThePassword.
+
+O projeto das parcelas está oficialmente "dockerizado"! Precisa de ajuda com algum endpoint específico agora?
+
+------------------ NOTAS GIT HUB
+# Inicializa o repositório
+git init
+
+# Adiciona todos os arquivos (o .gitignore vai filtrar o notas.txt automaticamente)
+git add .
+
+# Confirma as alterações
+git commit -m "feat: setup inicial spring boot com docker e mysql"

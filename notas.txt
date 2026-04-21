@@ -22,3 +22,10 @@ git add .
 
 # Confirma as alterações
 git commit -m "feat: setup inicial spring boot com docker e mysql"
+
+#Subir no repositorio online
+# Substitua pelo link que o GitHub te deu
+git remote add origin https://github.com/andersonaraujowork-hub/Spring_Java_mysql_1.0.git
+
+git branch -M main
+git push -u origin main
